@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>amiii_glow — косметика</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<header class="header"><a class="logo" href="#">amiii_<span>glow</span></a><nav><a href="#catalog">Каталог</a><a href="#about">О нас</a></nav><button class="cart-btn" onclick="toggleCart()">Корзина <b id="cartCount">0</b></button></header>
+<main><section class="hero"><div><p class="eyebrow">BEAUTY • CARE • GLOW</p><h1>Твоя кожа.<br><i>Твоё сияние.</i></h1><p class="lead">Косметика, которую хочется добавить в свою бьюти-рутину.</p><a class="primary" href="#catalog">Смотреть товары</a></div><div class="hero-art"><div class="orb"></div><div class="hero-card">amiii_<strong>glow</strong><small>your everyday glow</small></div></div></section>
+<section id="catalog" class="catalog"><div class="section-head"><div><p class="eyebrow">SHOP</p><h2>Каталог</h2></div><span id="productCount"></span></div><div id="products" class="grid"></div></section>
+<section id="about" class="about"><div><p class="eyebrow">AMIII_GLOW</p><h2>Маленькие ритуалы.<br>Большое сияние.</h2></div><p>Выбирай любимые средства, добавляй их в корзину и оформляй заказ через WhatsApp.</p></section></main>
+<footer>© 2026 amiii_glow <a href="admin.html">Админ-панель</a></footer>
+<div id="cartOverlay" class="overlay" onclick="if(event.target===this)toggleCart()"><aside class="cart"><button class="close" onclick="toggleCart()">×</button><h2>Корзина</h2><div id="cartItems"></div><div class="total"><span>Итого</span><strong id="cartTotal">0 ₽</strong></div><button class="primary full" onclick="checkout()">Оформить через WhatsApp</button><p class="note">После нажатия откроется WhatsApp с готовым заказом.</p></aside></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="config.js"></script><script src="app.js"></script></body></html>
